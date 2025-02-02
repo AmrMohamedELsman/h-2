@@ -116,7 +116,9 @@ for(let i = 0 ; i < mineArr.length; i++){
         readMoreBtn[i].style.display = "none";
         pinfo[i].style.display= "block";
         CloseredBtn[i].style.display = "block";
-        card[i].style.height = "240px";
+        CloseredBtn[i].style.backgroundColor = "red";
+        CloseredBtn[i].style.color = "white";
+        card[i].style.height = "250px";
         // card[i].style.height = "auto";
     })
 
@@ -124,6 +126,8 @@ for(let i = 0 ; i < mineArr.length; i++){
         pinfo[i].style.display= "none";
         CloseredBtn[i].style.display = "none";
         readMoreBtn[i].style.display = "block";
+        CloseredBtn[i].style.backgroundColor = "white";
+        CloseredBtn[i].style.color = "black";
         card[i].style.height = "120px";
     })
 }
@@ -220,6 +224,8 @@ for(let i = 0 ; i < sandwichArr.length; i++){
         sanCloseredBtn[i].style.display = "inline-block";
         sanCloseredBtn[i].style.margin = "10px 20px";
         sanCloseredBtn[i].style.padding = "5px 20px";
+        sanCloseredBtn[i].style.backgroundColor = "red";
+        sanCloseredBtn[i].style.color = "white";
         sancard[i].style.height = "auto";
         sancard[i].style.transform = "scale3d(1.1, 1.1, 1.3)";
     })
@@ -230,7 +236,8 @@ for(let i = 0 ; i < sandwichArr.length; i++){
         sanredBtn[i].style.display = "block";
         sancard[i].style.height = "120px";
         sancard[i].style.transform = "scale3d(1.0, 1.0, 1.0)";
-        
+        sanCloseredBtn[i].style.backgroundColor = "white";
+        sanCloseredBtn[i].style.color = "black";
     })
 }
 
@@ -305,6 +312,8 @@ for(let i = 0 ; i < pasArr.length; i++){
         pasCloseredBtn[i].style.display = "inline-block";
         pasCloseredBtn[i].style.margin = "10px 20px";
         pasCloseredBtn[i].style.padding = "5px 20px";
+        pasCloseredBtn[i].style.backgroundColor = "red";
+        pasCloseredBtn[i].style.color = "white";
         pasCard[i].style.height = "auto";
         pasCard[i].style.margin = "20px 0";
         pasCard[i].style.transform = "scale3d(1.1, 1.1, 1.3)";
@@ -317,7 +326,8 @@ for(let i = 0 ; i < pasArr.length; i++){
         pasCard[i].style.height = "120px";
         pasCard[i].style.margin = "10px";
         pasCard[i].style.transform = "scale3d(1.0, 1.0, 1.0)";
-        
+        pasCloseredBtn[i].style.backgroundColor = "white";
+        pasCloseredBtn[i].style.color = "black";
     })
 }
 
@@ -398,6 +408,8 @@ for(let i = 0 ; i < mainDIshArr.length; i++){
         mianDishCloseredBtn[i].style.display = "inline-block";
         mianDishCloseredBtn[i].style.margin = "10px 20px";
         mianDishCloseredBtn[i].style.padding = "5px 20px";
+        mianDishCloseredBtn[i].style.backgroundColor = "red";
+        mianDishCloseredBtn[i].style.color = "white";
         mainDishCard[i].style.height = "auto";
         mainDishCard[i].style.transform = "scale3d(1.1, 1.1, 1.3)";
         mainDishCard[i].style.flexDirection = "column";
@@ -420,6 +432,8 @@ for(let i = 0 ; i < mainDIshArr.length; i++){
         dImg[i].style.marginTop = "0px";
         dImg[i].style.height = "110px";
         mainDishCard[i].style.backgroundColor = "rgb(147 165 253)";
+        mianDishCloseredBtn[i].style.backgroundColor = "white";
+        mianDishCloseredBtn[i].style.color = "black";
     })
 }
 
@@ -521,6 +535,8 @@ for(let i = 0 ; i < cocarr.length; i++){
         cocCloseredBtn[i].style.display = "inline-block";
         cocCloseredBtn[i].style.margin = "5px 15px";
         cocCloseredBtn[i].style.padding = "5px 20px";
+        cocCloseredBtn[i].style.backgroundColor = "red";
+        cocCloseredBtn[i].style.color = "white";
         cocCard[i].style.height = "170px";
         cocCard[i].style.margin = "20px 0";
         cocCard[i].style.transform = "scale3d(1.1, 1.1, 1.3)";
@@ -532,7 +548,8 @@ for(let i = 0 ; i < cocarr.length; i++){
         cocredBtn[i].style.display = "block";
         cocCard[i].style.height = "120px";
         cocCard[i].style.transform = "scale3d(1.0, 1.0, 1.0)";
-        
+        cocCloseredBtn[i].style.backgroundColor = "white";
+        cocCloseredBtn[i].style.color = "black";
     })
 }
 
@@ -598,6 +615,8 @@ for(let i = 0 ; i < moarr.length; i++){
         moCloseredBtn[i].style.display = "inline-block";
         moCloseredBtn[i].style.margin = "5px 15px";
         moCloseredBtn[i].style.padding = "5px 20px";
+        moCloseredBtn[i].style.backgroundColor = "red";
+        moCloseredBtn[i].style.color = "white";
         moCard[i].style.height = "200px";
         moCard[i].style.margin = "20px 0";
         moCard[i].style.transform = "scale3d(1.1, 1.1, 1.3)";
@@ -609,7 +628,8 @@ for(let i = 0 ; i < moarr.length; i++){
         moredBtn[i].style.display = "block";
         moCard[i].style.height = "125px";
         moCard[i].style.transform = "scale3d(1.0, 1.0, 1.0)";
-        
+        moCloseredBtn[i].style.backgroundColor = "white";
+        moCloseredBtn[i].style.color = "black";
     })
 }
 

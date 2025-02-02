@@ -34,7 +34,8 @@ html{
 }
 
 nav{
-    background-color: rgb(113 136 247);
+    /* background-color: rgb(113 136 247); */
+    background-color: #2C3E50;
     text-align: center;
     position: absolute;
     top: 0;
@@ -69,7 +70,8 @@ nav h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(113 136 247);
+    /* background-color: rgb(113 136 247); */
+    background-color: #50b1f7;
 }
 
 
@@ -126,7 +128,8 @@ nav h2{
 .nav-links a {
     text-decoration: none;
     padding: 5px 10px;
-    background: #f4a261;
+    background: #1ABC9C;
+    /* background: #f4a261; */
     color: white;
     border-radius: 5px;
     font-weight: bold;
@@ -134,7 +137,9 @@ nav h2{
 }
 
 .nav-links a:hover {
-    background: #e76f51;
+    background: #2C3E50;
+
+    /* background: #e76f51; */
 }
 
 
@@ -149,7 +154,8 @@ nav h2{
 /* rgb(147 165 253) */
 
 .breckFast .conteaner{
-    background-color: rgb(219, 218, 218);
+    background-color: #E3E7EC ;
+    /* background-color: rgb(219, 218, 218); */
 }
 
 .heading h3{
@@ -166,12 +172,14 @@ nav h2{
     justify-content: space-around;
 }
 
+
 .breakfastCard .Card , 
     .sanCard ,
         .pasCard ,
             .mainDishCard ,
             .cocCard ,
             .moCard{
+            /* background-color: #8B4513; */
             background-color: rgb(147 165 253);
             width: 90%;
             height: 130px;
@@ -182,11 +190,6 @@ nav h2{
             transition: 0.3s;
     
 }
-
-
-
-
-
 
 
 .sanCard .breakfastImg ,
@@ -325,6 +328,12 @@ nav h2{
     }
 }
 
+@media (min-width : 320px) {
+    .breckFast .conteaner .pinfo{
+        font-size: 15px;
+    }
+}
+
 
 .Card .breakfastInfo button:hover ,
  .sanCard .sanbreakfastInfo button:hover ,
@@ -357,6 +366,7 @@ nav h2{
 a:active {
     background: #e76f51;
 }
+
 
 section{
     scroll-margin-top: 95px;
@@ -539,5 +549,13 @@ footer .myinfo .iconinfo i{
     color: #2a9d8f;
 }
 
-
-/* .Sandwhiches .conteaner */
+.pest{
+    background-color: #e76f51;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 0;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
