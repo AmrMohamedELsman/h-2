@@ -1,0 +1,543 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 4000px;
+}
+
+
+html{
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+
+
+
+.landing .imglanding img{
+    width: 100%;
+    height: 92vh;
+    margin-top: 45px;
+}
+
+@media (max-width : 320px) {
+    .landing .imglanding img{
+        height: 80vh;
+        margin-top: 45px;
+    }
+}
+
+@media (max-width : 375px) {
+    .landing .imglanding img{
+        height: 80vh;
+        margin-top: 45px;
+    }
+}
+
+nav{
+    background-color: rgb(113 136 247);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav span{
+    color: rgb(218, 218, 218);
+    font-weight: 500;
+}
+
+
+nav h2{
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+.mainSection{
+    position: relative;
+}
+
+.mainSection .gategore{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.mainSection .catgoreNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(113 136 247);
+}
+
+
+
+.gategore h3{
+    margin: 0;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+
+
+/* جعل النافبار يظهر بشكل أفقي */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 90%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    width: 90%; /* حجم العرض */
+    margin: 0 auto;
+    border-radius: 5px;
+    /* background-color: #2a9d8f; */
+    padding: 0 10px;
+}
+
+/* إخفاء شريط التمرير */
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* روابط التنقل */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.nav-links li {
+    flex: 0 0 auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #f4a261;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #e76f51;
+}
+
+
+
+.scroll-btn:hover {
+    background: #2a9d8f;
+}
+
+
+/* section preackfast */
+
+/* rgb(147 165 253) */
+
+.breckFast .conteaner{
+    background-color: rgb(219, 218, 218);
+}
+
+.heading h3{
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.breakfastCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.breakfastCard .Card , 
+    .sanCard ,
+        .pasCard ,
+            .mainDishCard ,
+            .cocCard ,
+            .moCard{
+            background-color: rgb(147 165 253);
+            width: 90%;
+            height: 130px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            /* justify-content: space-betwee; */
+            transition: 0.3s;
+    
+}
+
+
+
+
+
+
+
+.sanCard .breakfastImg ,
+ .Card .breakfastImg ,
+    .pasCard .breakfastImg ,
+    .mainDishCard .breakfastImg,
+    .cocCard .breakfastImg ,
+    .moCard .breakfastImg{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+}
+
+.Card .breakfastImg img ,
+ .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img,
+    .mainDishCard .breakfastImg img,
+    .cocCard .breakfastImg img ,
+    .moCard .breakfastImg img{
+        width: 100%;
+        height: 85%;
+        
+}
+.Card  .breakfastInfo ,
+    .sanCard .breakfastInfo ,
+    .pasCard .breakfastInfo ,
+    .mainDishCard .MainDishesInfo,
+    .cocCard .cocbreakfastInfo ,
+    .moCard .mobreakfastInfo{ 
+        width: 50%;
+        padding: 10px;
+}
+
+.sanCard .breakfastImg img,
+.pasCard .breakfastImg img,
+.mainDishCard .breakfastImg img ,
+.cocCard .breakfastImg img ,
+.moCard .breakfastImg img 
+    {
+        width: 150px;
+}
+
+@media (min-width : 320px) {
+    .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img{
+        width: 100px;
+    }
+}
+
+@media (min-width : 375px) {
+    .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img{
+        width: 140px;
+    }
+}
+
+@media (min-width : 425px) {
+    .sanCard .breakfastImg img ,
+    .pasCard .breakfastImg img{
+        width: 170px;
+    }
+}
+
+
+
+.Card  .breakfastInfo h4 ,
+ .sanCard .sanbreakfastInfo h4 ,
+    .pasCard .pasbreakfastInfo h4,
+    .mainDishCard .MainDishesInfo h4 ,
+    .cocCard .cocbreakfastInfo h4 ,
+    .moCard .mobreakfastInfo h4{
+        margin: 0;
+        padding: 10px 0;
+}
+
+.Card  .breakfastInfo p ,
+ .sanCard .sanbreakfastInfo p , 
+    .pasCard .pasbreakfastInfo p,
+    .mainDishCard .MainDishesInfo p ,
+    .cocCard .cocbreakfastInfo p ,
+    .moCard .mobreakfastInfo p{
+        font-weight: bold;
+        margin: 0;
+        padding: 0 0 10px 0;
+}
+
+
+
+.sanCard .sanbreakfastInfo .pinfo ,
+    .pasCard .pasbreakfastInfo .pinfo,
+    .mainDishCard .MainDishesInfo .maindishPinfo ,
+    .cocCard .cocbreakfastInfo .cocpinfo ,
+    .moCard .mobreakfastInfo .mopinfo{
+        color: #292929;
+        font-weight: 400;
+}
+
+.Card  .breakfastInfo span ,
+ .sanCard .sanbreakfastInfo span ,
+    .pasCard .pasbreakfastInfo span,
+    .mainDishCard .MainDishesInfo span ,
+    .cocCard .cocbreakfastInfo span ,
+    .moCard .mobreakfastInfo span{
+        font-weight: 400;
+}
+
+
+.Card .breakfastInfo button ,
+ .sanCard .sanbreakfastInfo button ,
+    .pasCard .pasbreakfastInfo button,
+    .mainDishCard .MainDishesInfo button ,
+    .cocCard .cocbreakfastInfo button ,
+    .moCard .mobreakfastInfo button{
+        outline: none;
+        border-style: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: 0.5s;
+}
+
+@media (min-width : 320px) {
+    .mainDishCard .MainDishesInfo h4 ,
+    .cocCard .cocbreakfastInfo h4 {
+        padding: 0 5px 10px 0;
+        font-size: 15px;
+    }
+
+    .mainDishCard .MainDishesInfo p , 
+    .cocCard .cocbreakfastInfo p {
+        padding: 0 5px 10px 0;
+        font-size: 12px;
+    }
+    .mainDishCard .MainDishesInfo button{
+        padding: 4px 6px;
+    }
+}
+
+
+.Card .breakfastInfo button:hover ,
+ .sanCard .sanbreakfastInfo button:hover ,
+    .pasCard .pasbreakfastInfo button:hover,
+    .mainDishCard .MainDishesInfo button:hover ,
+    .cocCard .cocbreakfastInfo button:hover ,
+    .moCard .mobreakfastInfo button:hover{
+        background-color: #e76f51;
+        color: white;
+}
+
+.Card .breakfastInfo .pinfo ,
+ .sanCard .sanbreakfastInfo .sanpinfo ,
+    .pasCard .pasbreakfastInfo .paspinfo,
+    .mainDishCard .MainDishesInfo .maindishPinfo ,
+    .cocCard .cocbreakfastInfo .cocpinfo ,
+    .moCard .mobreakfastInfo .mopinfo{
+         display: none;
+}
+
+.Card .breakfastInfo .CloseredBtn ,
+ .sanCard .sanbreakfastInfo .sanCloseredBtn , 
+    .pasCard .pasbreakfastInfo .pasCloseredBtn,
+    .mainDishCard .MainDishesInfo .mianDishCloseredBtn ,
+    .cocCard .cocbreakfastInfo .cocCloseredBtn ,
+    .moCard .mobreakfastInfo .moCloseredBtn{
+        display: none;
+}
+
+a:active {
+    background: #e76f51;
+}
+
+section{
+    scroll-margin-top: 95px;
+}
+.soup{
+    background-color: rgb(219, 218, 218);
+    scroll-margin-top: 100px;
+}
+
+.Sandwhiches{
+    background-color: rgb(219, 218, 218);
+    scroll-margin-top: 100px;
+}
+
+.Burgers{
+    background-color: white;
+    scroll-margin-top: 100px;
+}
+
+.Hawawshi{
+    background-color: rgb(219, 218, 218);
+    scroll-margin-top: 100px;
+}
+
+.Pizza{
+    background-color: rgb(219, 218, 218);
+    scroll-margin-top: 100px;
+}
+
+.dishbreakfastImg img{
+    width: 150px;
+    height: 120px;
+    padding: 5px;
+}
+
+.desAndPav{
+    height: 80vh;
+    /* margin-top: 30px; */
+}
+
+.desAndPav img{
+    width: 100%;
+    height: 100%;
+}
+
+.Coffee{
+    background-color: rgb(219, 218, 218);
+}
+
+.IcedCoffee{
+    background-color: rgb(219, 218, 218);
+}
+
+.freshJuice{
+    background-color: rgb(219, 218, 218);
+}
+
+.Yoghurt{
+    background-color: rgb(219, 218, 218);
+}
+
+.cocbreckFast{
+    background-color: white;
+}
+
+
+
+
+.miansoftCard{
+    /* background-color: #2a9d8f; */
+    /* background: conic-gradient( cyan, magenta); */
+    /* background: radial-gradient(ellipse at top left, blue, pink); */
+    /* background: radial-gradient(white, black); */
+    background: linear-gradient(45deg, red, yellow);
+
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.softInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.followus{
+    background-color: rgb(219, 218, 218);
+    text-align: center;
+    padding: 20px;
+}
+
+.followus .card{
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #0bafe0;
+}
+
+.followus .card .logo{
+    width: 100%;
+}
+
+.followus .card img{
+    width: 95%;
+    height: 250px;
+    padding: 10px 0 10px 0;   
+}
+
+.followus .card .contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.followus .card .contact div{
+    margin: 5px 0 15px 0;
+    padding: 5px 10px;
+    background-color: #f6f7f8;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 9px 2px deeppink;
+}
+
+.followus .card .contact div i{
+    color: blue;
+    font-weight: bold;
+}
+.followus .card .contact div .fa-instagram{
+    color: rgb(114, 4, 77);
+}
+
+.followus .card .contact div a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+footer{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+footer .myinfo{
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+footer .myinfo h3{
+    margin: 0px;
+    padding: 15px 0 15px 0;
+}
+footer .myinfo h4{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+footer .myinfo .iconinfo i{
+    font-size: 20px;
+    padding: 0 5px 0 5px;
+}
+
+.fa-linkedin{
+    color: blue;
+}
+
+.fa-whatsapp{
+    color: green;
+    font-weight: bolder;
+}
+
+.fa-envelope{
+    color: #2a9d8f;
+}
+
+
+/* .Sandwhiches .conteaner */
