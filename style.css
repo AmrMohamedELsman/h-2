@@ -434,7 +434,7 @@ section{
     padding: 10px 0;
 }
 .landing .contact .pox{
-    width: 300px;
+    width: 340px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -448,7 +448,7 @@ section{
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 0px 0px 9px 2px gray;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .landing .contact .pox div i{
