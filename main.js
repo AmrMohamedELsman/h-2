@@ -413,7 +413,7 @@ for(let i = 0 ; i < mainDIshArr.length; i++){
         mainDishCard[i].style.height = "auto";
         mainDishCard[i].style.transform = "scale3d(1.1, 1.1, 1.3)";
         mainDishCard[i].style.flexDirection = "column";
-        mainDishCard[i].style.backgroundColor = "#2a9d8f";
+        // mainDishCard[i].style.backgroundColor = "#2a9d8f";
         dImg[i].style.width = "70%";
         dImg[i].style.marginLeft = "35px";
         dImg[i].style.marginTop = "10px";
@@ -431,7 +431,7 @@ for(let i = 0 ; i < mainDIshArr.length; i++){
         dImg[i].style.marginLeft = "0px";
         dImg[i].style.marginTop = "0px";
         dImg[i].style.height = "110px";
-        mainDishCard[i].style.backgroundColor = "rgb(147 165 253)";
+        // mainDishCard[i].style.backgroundColor = "rgb(147 165 253)";
         mianDishCloseredBtn[i].style.backgroundColor = "white";
         mianDishCloseredBtn[i].style.color = "black";
     })
@@ -633,5 +633,86 @@ for(let i = 0 ; i < moarr.length; i++){
     })
 }
 
+
+
+let allLinks = document.querySelectorAll("li a");
+
+let allSections = {
+    "Breakfast": "Breakfast",
+    "Appetizers": "Appetizers",
+    "Soup": "soup",
+    "Salad": "Salad",
+    "Sandwhiches": "Sandwhiches",
+    "Burgers": "Burgers",
+    "Hawawshi": "Hawawshi",
+    "Pasta": "Pasta",
+    "Pizza": "Pizza",
+    "MainDishes": "MainDishes",
+    "Hot Drinks": "HotDrinks",
+    "Coffee": "Coffee",
+    "Milkshake": "Milkshake",
+    "Iced Coffee": "IcedCoffee",
+    "Frappuccino": "Frappuccino",
+    "fresh Juice": "freshJuice",
+    "Smootheis": "Smootheis",
+    "Yoghurt": "Yoghurt",
+    "Cocktils": "cocbreckFast",
+    "Mojito": "Mojito",
+    "Desserts": "Desserts",
+    "softDrinks": "softDrinks"
+};
+
+
+function hideAllSections() {
+    Object.values(allSections).forEach(id => {
+        let sec = document.getElementById(id);
+        if (sec) sec.style.display = "none";
+    });
+}
+
+// **إظهار قسم الفطور عند تحميل الصفحة**
+document.addEventListener("DOMContentLoaded", function() {
+    hideAllSections(); // إخفاء كل الأقسام
+    let breakfastSec = document.getElementById("Breakfast");
+    if (breakfastSec) breakfastSec.style.display = "block"; // إظهار الفطور فقط
+
+    // تحديد رابط "الفطور" ليكون نشطًا
+    allLinks.forEach(link => {
+        if (link.innerHTML === "Breakfast") {
+            link.style.backgroundColor = "#2C3E50";
+            link.style.color = "white";
+        } else {
+            link.style.backgroundColor = "";
+            link.style.color = "";
+        }
+    });
+});
+
+// **إضافة الحدث لكل رابط في القائمة**
+allLinks.forEach(link => {
+    link.addEventListener("click", function() {
+        let sectionId = allSections[link.innerHTML]; // الحصول على معرف القسم من الكائن
+        
+        if (sectionId) {
+            hideAllSections(); // إخفاء جميع الأقسام
+
+            // عرض القسم الذي تم النقر عليه
+            let section = document.getElementById(sectionId);
+            if (section) {
+                section.style.display = "block";
+            }
+
+            // إعادة تعيين ألوان جميع الروابط
+            allLinks.forEach(l => {
+                l.style.backgroundColor = "";
+                l.style.color = "";
+            });
+
+            // تغيير لون الرابط النشط
+            link.style.backgroundColor = "#2C3E50";
+            link.style.color = "white";
+        }
+    });
+});
 
 
